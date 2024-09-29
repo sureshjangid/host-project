@@ -1,0 +1,28 @@
+{
+  "name": "deploy-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "watch": "tsc --watch",
+    "dev": "nodemon src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.0",
+    "@aws-sdk/lib-storage": "^3.658.0",
+    "aws-sdk": "^2.1691.0",
+    "dotenv": "^16.4.5",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.6.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
